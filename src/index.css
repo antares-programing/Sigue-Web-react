@@ -1,0 +1,77 @@
+/* /src/index.css (Versión corregida) */
+
+/* Eliminamos las directivas de @tailwind que rompían la compilación */
+
+body {
+  font-family: 'Geologica', sans-serif;
+  background-color: #000000;
+}
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    z-index: 1;
+}
+
+.card-image {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(115deg, black 40%, transparent 75%);
+    mask-image: linear-gradient(100deg, black 55%, transparent 75%);
+}
+
+.card-text-container {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%; 
+    flex-grow: 1;
+}
+
+.add-to-cart-btn {
+  font-family: 'Geologica', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-accent {
+  background-color: #133c3d;
+  color: #fff;
+  border-color: #133c3d;
+}
+
+.btn-accent:hover {
+  background-color: #1a5354;
+  border-color: #1a5354;
+  color: #fff;
+}
+
+.font-geologica {
+  font-family: 'Geologica', sans-serif;
+}
